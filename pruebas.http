@@ -2,8 +2,8 @@ POST http://localhost:3000/api/registro
 Content-Type: application/json
 
 {
-  "nombre": "Juan Perez",
-  "email": "juan@correo.com",
+  "nombre": "Maria Gonzalo",
+  "email": "maria@correo.com",
   "password": "clave1234",
   "iso3_pais": "COL"
 }
@@ -36,4 +36,20 @@ Content-Type: application/json
 
 {
   "lamina_id": "COL5"
+}
+
+###
+
+POST http://localhost:3000/api/crear-intercambio
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJqdWFuQGNvcnJlby5jb20iLCJpYXQiOjE3Nzk2OTg5ODUsImV4cCI6MTc4MDMwMzc4NX0.nUmsQcxmMRo2XBDCxHCKtW_sMm-UKsrXf5Ab6yNMYW0
+Content-Type: application/json
+
+{
+  "usuario_recibe_id": 3,
+  "tipo": "virtual",
+  "punto_encuentro": null,
+  "laminas": [
+    { "lamina_id": "COL5", "direccion": "ofrece" },
+    { "lamina_id": "ARG12", "direccion": "solicita" }
+  ]
 }
