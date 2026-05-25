@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/registro
+Content-Type: application/json
+
+{
+  "nombre": "Juan Perez",
+  "email": "juan@correo.com",
+  "password": "clave1234",
+  "iso3_pais": "COL"
+}
