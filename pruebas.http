@@ -53,3 +53,19 @@ Content-Type: application/json
     { "lamina_id": "ARG12", "direccion": "solicita" }
   ]
 }
+
+###
+
+GET http://localhost:3000/api/mis-intercambios
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJqdWFuQGNvcnJlby5jb20iLCJpYXQiOjE3Nzk2OTg5ODUsImV4cCI6MTc4MDMwMzc4NX0.nUmsQcxmMRo2XBDCxHCKtW_sMm-UKsrXf5Ab6yNMYW0
+
+###
+
+POST http://localhost:3000/api/responder-intercambio
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJtYXJpYUBjb3JyZW8uY29tIiwiaWF0IjoxNzc5Njk4NzgyLCJleHAiOjE3ODAzMDM1ODJ9.-xRy4_KlMFNenQ8kT0nZbw2WI4MVfjc7Prtwt5rVmvg
+Content-Type: application/json
+
+{
+  "intercambio_id": 1,
+  "respuesta": "aceptado"
+}
